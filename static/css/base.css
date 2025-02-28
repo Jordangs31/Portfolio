@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    padding-top: 70px;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+#hobbies {
+    text-align: center;
+    background: #f9f9f9;
+    padding: 50px 20px;
+}
+.hobby{
+    display: inline-block;
+    width: 30%;
+    margin: 15px;
+    background: white;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.hobby img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.hobby h3{
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+.hobby p{
+    color: #666;
+    font-size: 1em;
+}
+.hobby:hover{
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+.project {
+    display: inline-block;
+    width: 30%;
+    margin: 15px;
+    background: white;
+    padding: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+#contact p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+#contact i {
+    color: #007bff;  /* Blue color for consistency */
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    color: #0056b3;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}

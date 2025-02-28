@@ -1,0 +1,85 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block content %}
+<body>
+
+    <header>
+        <h3>My Portfolio</h3>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome to my portfolio! I'm Jordan Valdez, a 22 years old BSIT student with a passion for technology and innovation. I'm currently studying Information
+            Technology at Cavite State University Bacoor Campus, where I'm learning about programming, cybersecurity, and system development.
+        </p>
+        <p>
+            I enjoy solving tech-related problems, exploring new software, and improving my coding skills. Wheter it's working on school projects,
+            learning new programming languages, or diving into the latest tech trends, I'm always eager to expand my knowledge.
+        </p>
+        <p>
+            I'm excited to connect with fellow students, tech enthusiasts, and professionals to learn, collaborative, and grow in the IT field!
+        </p>
+    </section>
+
+    <section id="hobbies">
+        <h2>My Hobbies</h2>
+        <div class="hobby">
+            <img src="{% static 'images/ball.jpg' %}" alt="Hobby 1">
+            <h3>Basketball</h3>
+            <p>Since I was a kid i like to play basketball until now, even if i have a metal in collarbone i never forget playing basketball.</p>
+        </div>
+        <div class="hobby">
+            <img src="{% static 'images/bike.jpg' %}" alt="Hobby 1">
+            <h3>Biking</h3>
+            <p>Since pandemic happened no physical activities have been made so i decided to do biking for my exercise.</p>
+        </div>
+        <div class="hobby">
+            <img src="{% static 'images/naza.jpg' %}" alt="Hobby 1">
+            <h3>Devotion</h3>
+            <p>Since 2018 i started to believe in Black Nazarene until now and forever.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <img src="{% static 'images/proj.png' %}"  alt="Project 1">
+            <h3>StudyHub WebApplication</h3>
+            <p>In the subject of Application Development we are assigned to make a web application and this is the expample that i made.</p>
+        </div>
+
+        <div class="project">
+            <img src="{% static 'images/proj2.png' %}"  alt="Project 1">
+            <h3>IShoesYou</h3>
+            <p>In the time of my second year we are assigned to make a project using html and css. We dont have enough knowledge about css so that what we made.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p><i class="fas fa-envelope"></i> Email: <a href="mailto:bc.jordan.valdez@cvsu.edu.ph">bc.jordan.valdez@cvsu.edu.ph</a></p>
+        <p><i class="fab fa-facebook"></i> Facebook: 
+            <a href="https://web.facebook.com/jordan.valdez23" target="_blank">Jordan Valdez</a>
+        </p>
+        <p><i class="fab fa-instagram"></i> Instagram: 
+            <a href="https://www.instagram.com/6106_911/" target="_blank">@6106_911</a>
+        </p>
+        <p><i class="fas fa-phone"></i> Phone: 09678053167</p>
+    </section>
+    
+
+    <footer>
+        <p>© 2025 Jordan Valdez. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+{% endblock content %}
